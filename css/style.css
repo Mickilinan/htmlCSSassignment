@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&family=Inter:wght@300;400;500;700;900&display=swap");
-html, body {
+html,
+body {
   color: #191919;
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -290,6 +291,14 @@ header .container .menu .btn-login {
   .showcase .container img {
     display: block;
   }
+}
+
+.company .grid-container {
+  gap: 45px;
+  display: flex;
+  justify-content: center;
+  padding-top: 95px;
+  flex-wrap: wrap;
 }
 
 .project-and-case .container .section-title {

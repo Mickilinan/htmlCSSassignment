@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&family=Inter:wght@300;400;500;700;900&display=swap');
 
-html, body {
+html,
+body {
     color: #191919;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
@@ -19,7 +20,7 @@ html, body {
 }
 
 .btn-yellow {
-    background-color:#F9D783;
+    background-color: #F9D783;
     border: 1px solid #F9D783;
     color: #191919;
     text-decoration: none;
@@ -40,8 +41,9 @@ html, body {
     }
 
 }
+
 .btn-black {
-    background-color:#191919;
+    background-color: #191919;
     border: 1px solid #191919;
     color: #FFFFFF;
     text-decoration: none;
@@ -90,22 +92,22 @@ html, body {
     padding-top: 70px;
     padding-bottom: 30px;
 
-    @media (min-width: 768px){
+    @media (min-width: 768px) {
         padding-top: 120px;
         padding-bottom: 90px;
     }
 
-   p {
-    color: #F94D1C;
-    margin-bottom: 10px;
-   } 
+    p {
+        color: #F94D1C;
+        margin-bottom: 10px;
+    }
 
-   h2{
-    color: #191919;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    font-size: 45px;
-   }
+    h2 {
+        color: #191919;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 45px;
+    }
 }
 
 .center-content {
@@ -113,154 +115,158 @@ html, body {
     justify-content: center;
     align-items: center;
 }
+
 header {
     background-color: #F0EFE9;
     padding: 16px;
-    
+
     .container {
         display: grid;
         align-items: center;
         grid-template-columns: 1fr auto;
-        grid-template-areas:        "logo bars";
-                                    
+        grid-template-areas: "logo bars";
+
 
         @media (min-width: 992px) {
             grid-template-columns: auto 1fr auto;
-        grid-template-areas:        "logo cib social"
-                                    "logo menu menu";
+            grid-template-areas: "logo cib social"
+                "logo menu menu";
 
         }
 
 
-         .btn-menubars {
+        .btn-menubars {
             grid-area: bars;
             border: none;
             font-size: 25px;
             background-color: transparent;
 
-            @media (min-width: 992px){
-            display:none;
+            @media (min-width: 992px) {
+                display: none;
             }
-         }                           
+        }
 
-        
-        .logotype{
+
+        .logotype {
             grid-area: logo;
             margin-right: 70px;
-            
+
         }
-        .contactinformation-bar{
-        
+
+        .contactinformation-bar {
+
             grid-area: cib;
-            display:none;
+            display: none;
             justify-content: flex-start;
             align-items: center;
-            
 
 
-            @media (min-width: 1200px){
-                display:flex;
-                }
 
-                .content-box {
-                    padding-right: 30px;
-                    margin-right: 30px;
-                    border-right: 1px solid #DAD9D3;
-                    font-family: 'Inter', sans-serif;
-                    font-size: 15px;
-                    font-weight: 300;
+            @media (min-width: 1200px) {
+                display: flex;
+            }
 
-                    i {
-                        margin-right: 5px;
-                        font-size: 1.2em;
-                    
-                    }
+            .content-box {
+                padding-right: 30px;
+                margin-right: 30px;
+                border-right: 1px solid #DAD9D3;
+                font-family: 'Inter', sans-serif;
+                font-size: 15px;
+                font-weight: 300;
 
-                    &.last {
-                        border: none;
-                    }
+                i {
+                    margin-right: 5px;
+                    font-size: 1.2em;
 
                 }
-            
+
+                &.last {
+                    border: none;
+                }
+
+            }
+
         }
-        .socialmedia-bar{
+
+        .socialmedia-bar {
             grid-area: social;
-            display:none;
-            
+            display: none;
 
-            @media (min-width: 992px){
-                display:block;
+
+            @media (min-width: 992px) {
+                display: block;
+            }
+
+
+            a {
+                color: #191919;
+                font-size: 1.3rem;
+                margin-left: 10px;
+
+                &:hover {
+                    color: #7c7c7c;
                 }
+            }
 
-
-                    a {
-                        color: #191919;
-                        font-size: 1.3rem;
-                        margin-left: 10px;
-    
-                        &:hover {
-                            color: #7c7c7c;
-                        }
-                    }
-                
         }
-        .menu{
+
+        .menu {
             grid-area: menu;
-            display:none;
+            display: none;
             justify-content: space-between;
             align-items: center;
             border-top: 1px solid #DAD9D3;
             margin-top: 10px;
             padding-top: 10px;
 
-            @media (min-width: 992px){
-                display:flex;
+            @media (min-width: 992px) {
+                display: flex;
+            }
+
+            nav {
+                a {
+                    display: inline-block;
+                    color: #191919;
+                    text-decoration: none;
+                    margin-right: 35px;
+                    position: relative;
+
+                    &.active {
+                        font-weight: 500;
+                    }
+
+                    &.active::after,
+                    &:hover::after {
+                        content: '';
+                        position: absolute;
+                        font-weight: 500;
+                        height: 2px;
+                        width: 15px;
+                        background-color: #191919;
+                        left: 50%;
+                        bottom: -3px;
+                        transform: translate((calc(50% - 15px)));
+                    }
+
+
                 }
 
-                nav {
-                    a {
-                        display: inline-block;
-                        color:#191919;
-                        text-decoration: none;
-                        margin-right: 35px;
-                        position: relative;
-    
-                        &.active {
-                            font-weight: 500;
-                        }
-    
-                        &.active::after,
-                        &:hover::after { 
-                            content: '';
-                            position: absolute;
-                            font-weight: 500;
-                            height: 2px;
-                            width: 15px;
-                            background-color: #191919;
-                            left: 50%;
-                            bottom: -3px;
-                            transform: translate((calc(50% - 15px)));
-                            }
-                        
-                       
-                        }
-                 
-                    }  
-                    
-                    .btn-login {
+            }
 
-                        padding-top: 12px;
-                        padding-bottom: 12px;
-                       }
+            .btn-login {
+
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }
         }
-       
-        
+
+
     }
 
 
 }
 
-.showcase{
+.showcase {
     background-color: #F0EFE9;
     position: relative;
     z-index: 0;
@@ -269,16 +275,16 @@ header {
         position: absolute;
         bottom: 0;
         left: 0;
-        z-index:-1;
+        z-index: -1;
     }
 
     .container {
-        display:flex;
+        display: flex;
         justify-content: space-between;
         align-items: center;
 
 
-        .content{
+        .content {
             padding-top: 40px;
             padding-bottom: 40px;
             text-align: center;
@@ -286,38 +292,38 @@ header {
             @media (min-width: 1200px) {
                 text-align: left;
             }
-       
-            h1{
+
+            h1 {
                 font-family: 'DM Sans', sans-serif;
                 font-weight: 700;
                 font-size: 40px;
-                
+
                 @media (min-width: 768px) {
                     font-size: 70px;
-                } 
+                }
 
                 @media (min-width: 1400px) {
                     font-size: 86px;
-                } 
+                }
 
 
             }
 
             p {
-                
+
                 font-size: 18px;
                 padding-top: 40px;
                 padding-bottom: 40px;
                 padding-left: 10px;
-                padding-right:10px;
+                padding-right: 10px;
 
 
                 @media (min-width: 768px) {
                     font-size: 20px;
                     padding-left: 0px;
-                padding-right: 0px;
-                } 
-                
+                    padding-right: 0px;
+                }
+
 
             }
 
@@ -329,10 +335,10 @@ header {
                 @media (min-width: 768px) {
                     margin-right: 10px;
                     display: inline-block;
-                } 
+                }
 
 
-                
+
             }
 
         }
@@ -343,26 +349,47 @@ header {
 
             @media (min-width: 1200px) {
                 display: block;
-            } 
+            }
 
         }
     }
 
 }
 
+.company {
+
+
+    .grid-container {
+        gap: 45px;
+        display: flex;
+        justify-content: center;
+        padding-top: 95px;
+        flex-wrap: wrap;
+    }
+
+
+
+
+
+
+}
+
+
+
+
 .project-and-case {
-    .container{
+    .container {
         .section-title {
             text-align: center;
-            
+
         }
 
-        .project-and-cases{
+        .project-and-cases {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 30px;
 
-            @media (min-width: 768px){
+            @media (min-width: 768px) {
                 grid-template-columns: 1fr 1fr;
             }
 
@@ -370,11 +397,11 @@ header {
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: auto 1fr auto;
-                color:#191919;
+                color: #191919;
                 text-decoration: none;
-               
 
-                img{
+
+                img {
                     width: 100%;
                     height: auto;
 
@@ -404,21 +431,23 @@ header {
                         margin-left: 3px;
                     }
 
-                   
-                    
+
+
 
 
                 }
+
                 &:hover .readmore {
                     text-decoration: underline;
                 }
             }
         }
+
         .center-content {
             margin-top: 50px;
             margin-bottom: 90px;
         }
-       
+
     }
 
 }
@@ -430,31 +459,34 @@ header {
     padding-bottom: 80px;
     z-index: 0;
 
-   
 
-    .backgroundlines-right{
+
+    .backgroundlines-right {
         position: absolute;
         bottom: 50px;
         right: 0;
         z-index: -1;
 
-       
-       
+
+
 
     }
+
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        h2{
+
+        h2 {
             font-family: 'DM Sans', sans-serif;
             font-size: 45px;
             font-weight: 700;
         }
-        form{
 
-            input{
-                color:#191919;
+        form {
+
+            input {
+                color: #191919;
                 text-decoration: none;
                 padding: 15px 30px;
                 font-size: 16px;
