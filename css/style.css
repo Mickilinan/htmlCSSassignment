@@ -293,12 +293,63 @@ header .container .menu .btn-login {
   }
 }
 
-.company .grid-container {
+.clients .grid-container {
   gap: 45px;
   display: flex;
   justify-content: center;
   padding-top: 95px;
+  padding-bottom: 95px;
   flex-wrap: wrap;
+}
+
+.features {
+  padding: 60px 250px 100px 100px;
+  display: flex;
+  border: 2px solid #F0EFE9;
+  justify-content: space-evenly;
+  gap: 100px;
+  width: 85%;
+  margin: auto;
+}
+.features .section-title .container p {
+  margin-top: -100px;
+  margin-bottom: 30px;
+}
+.features .section-title .container h2 {
+  text-align: left;
+  margin-bottom: 40px;
+}
+.features .section-title .btn-yellow {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.features .advice .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .features .advice .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.features .advice .container .advices {
+  display: flex;
+  flex-direction: column;
+  color: #191919;
+  text-decoration: none;
+}
+.features .advice .container .advices i {
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 40px;
+}
+.features .advice h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  padding-top: 35px;
+  padding-bottom: 16px;
 }
 
 .project-and-case .container .section-title {
