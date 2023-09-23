@@ -465,21 +465,39 @@ header {
     }
 }
 
-.company{
+.company {
     display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            
-            p{
-                
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 
-            }
+    .parent {
+        position: relative;
+        left: 350px;
+
+        .child {
+            position: relative;
+            bottom: 220px;
+            right: 60px;
+            height: 130px;
+            width: 290px;
+            background-color: rgb(139, 201, 180);
+
+
+            p {}
+
+
+        }
+
+
+    }
+
 
 
     img {
+
         width: 40%;
         height: auto;
-    
+
     }
 }
 

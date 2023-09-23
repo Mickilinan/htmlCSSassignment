@@ -357,6 +357,18 @@ header .container .menu .btn-login {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
+.company .parent {
+  position: relative;
+  left: 350px;
+}
+.company .parent .child {
+  position: relative;
+  bottom: 220px;
+  right: 60px;
+  height: 130px;
+  width: 290px;
+  background-color: rgb(139, 201, 180);
+}
 .company img {
   width: 40%;
   height: auto;
