@@ -311,6 +311,9 @@ header .container .menu .btn-login {
   width: 85%;
   margin: auto;
 }
+.features .section-title {
+  display: block;
+}
 .features .section-title .container p {
   margin-top: -100px;
   margin-bottom: 30px;
@@ -360,18 +363,44 @@ header .container .menu .btn-login {
 .company .parent {
   position: relative;
   left: 350px;
+  top: 125px;
 }
 .company .parent .child {
   position: relative;
-  bottom: 220px;
-  right: 60px;
-  height: 130px;
-  width: 290px;
+  bottom: 450px;
+  right: 40px;
+  height: 170px;
+  width: 340px;
   background-color: rgb(139, 201, 180);
 }
+.company .parent .child #red {
+  color: #F94D1C;
+  font-weight: bold;
+}
+.company .parent .child #bold {
+  font-weight: bold;
+}
+.company .parent .child p {
+  padding-top: 20px;
+  margin-bottom: -15px;
+  margin-left: 10px;
+}
 .company img {
-  width: 40%;
+  width: 50%;
   height: auto;
+}
+.company .about {
+  margin-top: 120px;
+}
+.company .about #top {
+  color: #F94D1C;
+  margin-bottom: 10px;
+}
+.company .about h2 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
 }
 
 .project-and-case .container .section-title {
