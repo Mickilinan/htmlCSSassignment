@@ -365,42 +365,68 @@ header .container .menu .btn-login {
   left: 350px;
   top: 125px;
 }
-.company .parent .child {
+.company .parent .child1 {
   position: relative;
-  bottom: 450px;
-  right: 40px;
-  height: 170px;
-  width: 340px;
-  background-color: rgb(139, 201, 180);
+  bottom: 220px;
+  right: 55px;
+  height: 180px;
+  width: 365px;
+  background-color: rgb(167, 209, 226);
 }
-.company .parent .child #red {
-  color: #F94D1C;
-  font-weight: bold;
-}
-.company .parent .child #bold {
-  font-weight: bold;
-}
-.company .parent .child p {
-  padding-top: 20px;
-  margin-bottom: -15px;
-  margin-left: 10px;
-}
-.company img {
+.company .parent .child1 img {
   width: 50%;
   height: auto;
 }
-.company .about {
+.company .parent .child1 #red {
+  color: #F94D1C;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: dm sans;
+}
+.company .parent .child1 #bold {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: dm sans;
+}
+.company .parent .child1 p {
+  padding-top: 30px;
+  margin-bottom: -30px;
+  margin-left: 25px;
+  padding-right: 30px;
+  font-size: 16px;
+  font-family: 700;
+}
+.company .parent .child2 {
+  position: relative;
+  top: -750px;
+  right: 40px;
+}
+.company .container p {
+  margin-bottom: 45px;
+}
+.company .container .about {
   margin-top: 120px;
 }
-.company .about #top {
+.company .container .about #top {
   color: #F94D1C;
   margin-bottom: 10px;
 }
-.company .about h2 {
+.company .container .about h2 {
   color: #191919;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 45px;
+  padding-bottom: 20px;
+}
+.company .container .introvideo {
+  text-decoration: none;
+  color: #191919;
+  padding: 25px;
+  font-weight: bold;
+}
+.company .container .introvideo i {
+  font-size: 3em;
+  padding-top: 20px;
 }
 
 .project-and-case .container .section-title {

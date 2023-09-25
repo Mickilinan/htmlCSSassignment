@@ -470,49 +470,76 @@ header {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 
+
+
     .parent {
         position: relative;
         left: 350px;
         top: 125px;
 
-        .child {
+        .child1 {
             position: relative;
-            bottom: 450px;
-            right: 40px;
-            height: 170px;
-            width: 340px;
-            background-color: rgb(139, 201, 180);
+            bottom: 220px;
+            right: 55px;
+            height: 180px;
+            width: 365px;
+            background-color: rgb(167, 209, 226);
+            img {
+
+                width: 50%;
+                height: auto;
+        
+            }
+          
 
             #red {
                 color: #F94D1C;
                 font-weight: bold;
+                font-size: 16px;
+                font-family: dm sans;
+                
             }
 
             #bold {
                 font-weight: bold;
+                font-size: 20px;
+                font-family: dm sans;
             }
 
 
             p {
-                padding-top: 20px;
-                margin-bottom: -15px;
-                margin-left: 10px;
+                padding-top: 30px;
+                margin-bottom: -30px;
+                margin-left: 25px;
+                padding-right: 30px;
+                font-size:16px;
+                font-family: 700;
             }
 
 
         }
+        .child2 {
+            position: relative;
+            top: -750px;
+            right:40px;
+            
+            
+        }
+
+        
 
 
     }
 
+    
 
-
-    img {
-
-        width: 50%;
-        height: auto;
-
-    }
+.container {
+ 
+    
+p {
+    margin-bottom: 45px;
+}
+    
 
     .about {
 
@@ -528,9 +555,27 @@ header {
             font-family: 'DM Sans', sans-serif;
             font-weight: 700;
             font-size: 45px;
+            padding-bottom: 20px;
         }
+      
+
 
     }
+
+    .introvideo {
+        text-decoration: none;
+        color: #191919;
+        padding: 25px;
+        font-weight: bold;
+        
+
+
+        i {
+            font-size: 3em;
+            padding-top: 20px;
+        }
+    }
+}
 }
 
 
