@@ -466,116 +466,190 @@ header {
 }
 
 .company {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+
+    .container {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 200px;
+        margin-top: 100px;
 
 
 
-    .parent {
-        position: relative;
-        left: 350px;
-        top: 125px;
 
-        .child1 {
+        .parent {
             position: relative;
-            bottom: 220px;
-            right: 55px;
-            height: 180px;
-            width: 365px;
-            background-color: rgb(167, 209, 226);
-            img {
 
-                width: 50%;
-                height: auto;
-        
+
+            .child1 {
+                position: relative;
+                bottom: 220px;
+                right: 55px;
+                height: 180px;
+                width: 365px;
+                background-color: rgb(167, 209, 226);
+
+                img {
+
+                    width: 50%;
+                    height: auto;
+
+                }
+
+
+                #red {
+                    color: #F94D1C;
+                    font-weight: bold;
+                    font-size: 16px;
+                    font-family: dm sans;
+
+                }
+
+                #bold {
+                    font-weight: bold;
+                    font-size: 20px;
+                    font-family: dm sans;
+                }
+
+
+                p {
+                    padding-top: 30px;
+                    margin-bottom: -30px;
+                    margin-left: 25px;
+                    padding-right: 30px;
+                    font-size: 16px;
+                    font-family: 700;
+                }
+
+
             }
-          
 
-            #red {
+            .child2 {
+                position: relative;
+                top: -750px;
+                right: 40px;
+
+
+            }
+
+
+
+
+        }
+
+
+        .about {
+
+
+            #top {
                 color: #F94D1C;
-                font-weight: bold;
-                font-size: 16px;
-                font-family: dm sans;
-                
+                margin-bottom: 10px;
             }
 
-            #bold {
-                font-weight: bold;
-                font-size: 20px;
-                font-family: dm sans;
+            h2 {
+                color: #191919;
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 45px;
+                padding-bottom: 20px;
             }
 
-
-            p {
-                padding-top: 30px;
-                margin-bottom: -30px;
-                margin-left: 25px;
-                padding-right: 30px;
-                font-size:16px;
-                font-family: 700;
-            }
 
 
         }
-        .child2 {
-            position: relative;
-            top: -750px;
-            right:40px;
-            
-            
+
+
+
+
+        .center-content {
+
+
+
+
+            .introvideo {
+                text-decoration: none;
+                color: #191919;
+                padding: 25px;
+                font-weight: bold;
+
+
+
+                i {
+                    font-size: 3em;
+                    padding-top: 20px;
+                }
+            }
         }
-
-        
-
-
     }
-
-    
-
-.container {
- 
-    
-p {
-    margin-bottom: 45px;
 }
-    
 
-    .about {
+.services {
+    background-color: #F0EFE9;
+    padding-bottom: 150px;
 
-        margin-top: 120px;
-
-        #top {
-            color: #F94D1C;
-            margin-bottom: 10px;
-        }
+    .section-title {
 
         h2 {
-            color: #191919;
-            font-family: 'DM Sans', sans-serif;
             font-weight: 700;
             font-size: 45px;
-            padding-bottom: 20px;
         }
-      
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 25px;
+        margin-top: -60px;
+        padding-bottom: 50px;
+
+        .services2 {
+
+
+            background-color: white;
+            color: black;
+            padding: 40px;
+            text-align: left;
+            text-decoration: none;
+            display: inline-block;
+
+
+
+            &:hover {
+                background-color: #F9D783;
+
+                i {
+                    color: white;
+                }
+            }
+
+            img {
+                padding-bottom: 35px;
+            }
+
+            h3 {
+                font-weight: 700;
+                font-size: 20px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 14px;
+            }
+
+            i {
+                font-size: 40px;
+                margin-left: 150px;
+
+            }
+
+
+
+        }
 
 
     }
 
-    .introvideo {
-        text-decoration: none;
-        color: #191919;
-        padding: 25px;
-        font-weight: bold;
-        
 
-
-        i {
-            font-size: 3em;
-            padding-top: 20px;
-        }
-    }
-}
 }
 
 
