@@ -475,18 +475,31 @@ header .container .menu .btn-login {
 
 .why-choose-us .container {
   display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
 }
 .why-choose-us .container .choose-us {
+  display: flex;
   text-decoration: none;
   color: #191919;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.why-choose-us .container .choose-us h3 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.why-choose-us .container .choose-us p {
+  font-weight: 400;
+  font-size: 14px;
 }
 .why-choose-us .container .ichoose {
   font-size: 20px;
 }
 .why-choose-us .container .parent {
   position: relative;
-  top: 0;
-  left: 0;
+  left: 500px;
+  bottom: 700px;
 }
 .why-choose-us .container .parent .background {
   position: relative;
@@ -499,6 +512,9 @@ header .container .menu .btn-login {
   left: 220px;
 }
 
+.project-and-case .container {
+  margin-top: -400px;
+}
 .project-and-case .container .section-title {
   text-align: center;
 }

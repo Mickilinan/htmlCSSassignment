@@ -666,7 +666,10 @@ header {
 
     .container {
        display: flex;
-       
+    //    flex-direction: column;
+    //    column-gap: 40px;
+       flex-flow: column wrap;
+       justify-content: space-around;
        
        
        
@@ -675,9 +678,20 @@ header {
            
 
             .choose-us {
-                
+                display:flex;
                 text-decoration: none;
                 color:#191919;
+                column-gap: 40px;
+
+                h3 {
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+                
                 
                 
 
@@ -685,7 +699,10 @@ header {
             }
 
             .ichoose {
+                // display:flex;
                 font-size: 20px;
+                
+                
                 
                 
                 
@@ -694,9 +711,12 @@ header {
         
 
         .parent {
+        
             position:relative;
-            top:0;
-            left:0;
+            // top:0;
+            // left:0;
+            left:500px;
+            bottom: 700px;
 
             .background {
                 position:relative;
@@ -729,6 +749,7 @@ header {
 
 .project-and-case {
     .container {
+        margin-top: -400px;
         .section-title {
             text-align: center;
 
