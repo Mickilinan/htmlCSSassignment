@@ -584,8 +584,10 @@ header {
 }
 
 .services {
+    position: relative;
     background-color: #F0EFE9;
     padding-bottom: 150px;
+    
 
     .section-title {
 
@@ -649,6 +651,77 @@ header {
 
     }
 
+    .bglinesright {
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+       
+
+    }
+
+
+}
+
+.why-choose-us {
+
+    .container {
+       display: flex;
+       
+       
+       
+       
+       
+        
+           
+
+            .choose-us {
+                
+                text-decoration: none;
+                color:#191919;
+                
+                
+
+
+            }
+
+            .ichoose {
+                font-size: 20px;
+                
+                
+                
+            }
+           
+        
+
+        .parent {
+            position:relative;
+            top:0;
+            left:0;
+
+            .background {
+                position:relative;
+                top: 250px;               
+                left:120px;
+
+            }
+
+            .twowomen {
+                position: absolute;
+                top: 70px;
+                left:220px;
+
+            }
+  
+            
+
+            
+            
+
+          
+        }
+
+       
+    }
 
 }
 

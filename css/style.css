@@ -423,6 +423,7 @@ header .container .menu .btn-login {
 }
 
 .services {
+  position: relative;
   background-color: #F0EFE9;
   padding-bottom: 150px;
 }
@@ -465,6 +466,37 @@ header .container .menu .btn-login {
 .services .grid-container .services2 i {
   font-size: 40px;
   margin-left: 150px;
+}
+.services .bglinesright {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+}
+
+.why-choose-us .container {
+  display: flex;
+}
+.why-choose-us .container .choose-us {
+  text-decoration: none;
+  color: #191919;
+}
+.why-choose-us .container .ichoose {
+  font-size: 20px;
+}
+.why-choose-us .container .parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.why-choose-us .container .parent .background {
+  position: relative;
+  top: 250px;
+  left: 120px;
+}
+.why-choose-us .container .parent .twowomen {
+  position: absolute;
+  top: 70px;
+  left: 220px;
 }
 
 .project-and-case .container .section-title {
