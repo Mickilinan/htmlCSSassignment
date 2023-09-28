@@ -765,7 +765,7 @@ header {
 
 .project-and-case {
     .container {
-        margin-top: -400px;
+
 
         .section-title {
             text-align: center;
@@ -838,6 +838,79 @@ header {
 
     }
 
+}
+
+.meet-our-team {
+
+    background-color: #F9D783;
+
+    .container {
+
+
+        .section-title {
+            padding-left: 100px;
+            padding-right: 100px;
+
+
+        }
+
+        .team-members {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            padding-left: 100px;
+            padding-right: 100px;
+            gap: 20px;
+
+
+
+
+            h3 {
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 22px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 14px;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+
+        }
+    }
+}
+
+.testimonial {
+    background-color: #F9D783;
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+    .container {
+        background-color: white;
+        padding-top: 20px;
+        padding-bottom: 100px;
+        padding-left: 100px;
+        padding-right: 100px;
+
+        .section-title {
+            text-align: center;
+
+        }
+
+        .client-says {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 100px;
+            padding-bottom: 100px;
+
+
+        }
+    }
 }
 
 .newsletter {
