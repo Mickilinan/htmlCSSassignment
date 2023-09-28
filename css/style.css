@@ -314,6 +314,11 @@ header .container .menu .btn-login {
 .features .section-title {
   display: block;
 }
+@media (min-width: 1200px) {
+  .features .section-title {
+    text-align: left;
+  }
+}
 .features .section-title .container p {
   margin-top: -100px;
   margin-bottom: 30px;
@@ -375,6 +380,11 @@ header .container .menu .btn-login {
 .company .container .parent .child1 img {
   width: 50%;
   height: auto;
+}
+@media (min-width: 1200px) {
+  .company .container .parent .child1 img {
+    display: block;
+  }
 }
 .company .container .parent .child1 #red {
   color: #F94D1C;
@@ -510,6 +520,10 @@ header .container .menu .btn-login {
   position: absolute;
   top: 70px;
   left: 220px;
+}
+.why-choose-us .container .parent img {
+  max-width: 100%;
+  height: auto;
 }
 
 .project-and-case .container {

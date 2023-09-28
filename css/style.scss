@@ -386,9 +386,14 @@ header {
     margin: auto;
 
 
+
     .section-title {
 
         display: block;
+
+        @media (min-width: 1200px) {
+            text-align: left;
+        }
 
         .container {
 
@@ -410,6 +415,15 @@ header {
 
             padding-left: 200px;
             padding-right: 200px;
+
+            // @media (min-width: 390px) {
+            //     padding-left:50px;
+            //     padding-right: 50px;
+            // }
+            // @media (min-width: 768px) {
+            //     margin-right: 10px;
+            //     display: inline-block;
+            // }
         }
     }
 
@@ -493,6 +507,10 @@ header {
 
                     width: 50%;
                     height: auto;
+
+                    @media (min-width: 1200px) {
+                        display: block;
+                    }
 
                 }
 
@@ -587,7 +605,7 @@ header {
     position: relative;
     background-color: #F0EFE9;
     padding-bottom: 150px;
-    
+
 
     .section-title {
 
@@ -655,7 +673,7 @@ header {
         position: absolute;
         bottom: 0px;
         right: 0;
-       
+
 
     }
 
@@ -665,82 +683,80 @@ header {
 .why-choose-us {
 
     .container {
-       display: flex;
-    //    flex-direction: column;
-    //    column-gap: 40px;
-       flex-flow: column wrap;
-       justify-content: space-around;
-       
-       
-       
-       
-        
-           
-
-            .choose-us {
-                display:flex;
-                text-decoration: none;
-                color:#191919;
-                column-gap: 40px;
-
-                h3 {
-                    font-weight: 700;
-                    font-size: 20px;
-                }
-                p {
-                    font-weight: 400;
-                    font-size: 14px;
-                }
-                
-                
-                
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
 
 
-            }
 
-            .ichoose {
-                // display:flex;
+
+
+
+
+        .choose-us {
+            display: flex;
+            text-decoration: none;
+            color: #191919;
+            column-gap: 40px;
+
+            h3 {
+                font-weight: 700;
                 font-size: 20px;
-                
-                
-                
-                
-                
             }
-           
-        
+
+            p {
+                font-weight: 400;
+                font-size: 14px;
+            }
+
+
+
+
+
+        }
+
+        .ichoose {
+
+            font-size: 20px;
+
+        }
+
+
 
         .parent {
-        
-            position:relative;
-            // top:0;
-            // left:0;
-            left:500px;
+
+            position: relative;
+            left: 500px;
             bottom: 700px;
 
             .background {
-                position:relative;
-                top: 250px;               
-                left:120px;
+                position: relative;
+                top: 250px;
+                left: 120px;
 
             }
 
             .twowomen {
                 position: absolute;
                 top: 70px;
-                left:220px;
+                left: 220px;
 
             }
-  
-            
 
-            
-            
+            img {
+                max-width: 100%;
+                height: auto;
+            }
 
-          
+
+
+
+
+
+
         }
 
-       
+
     }
 
 }
@@ -750,6 +766,7 @@ header {
 .project-and-case {
     .container {
         margin-top: -400px;
+
         .section-title {
             text-align: center;
 
