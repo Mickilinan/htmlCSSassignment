@@ -662,3 +662,13 @@ header .container .menu .btn-login {
   border: 1px solid rgba(25, 25, 25, 0.1);
   margin-right: 20px;
 }
+
+footer {
+  background-color: #191919;
+}
+footer h3 {
+  color: white;
+}
+footer p {
+  color: #DAD9D3;
+}
