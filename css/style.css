@@ -717,22 +717,56 @@ header .container .menu .btn-login {
   margin-right: 20px;
 }
 
-footer {
+.about-crito {
+  position: relative;
+  z-index: 0;
   background-color: #191919;
 }
-footer .grid-container {
+.about-crito .bglinesfooter {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.about-crito .container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.about-crito .container .grid-container {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-  gap: 100px;
+  grid-template-columns: 10fr 5fr 6fr 7fr 7fr;
+  gap: 50px;
 }
-footer .grid-container h3 {
-  padding: 25px;
+.about-crito .container .grid-container .logotype {
+  padding-bottom: 15px;
 }
-footer h3 {
+.about-crito .container .grid-container h3 {
+  padding-bottom: 25px;
   color: white;
   font-weight: 700;
   font-size: 22px;
 }
-footer p {
+.about-crito .container .grid-container p {
   color: #DAD9D3;
+}
+
+footer {
+  background-color: #191919;
+  border-top: 1px solid rgba(218, 217, 211, 0.2);
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer .container p {
+  color: #DAD9D3;
+}
+footer .container .socialmedia-bar {
+  justify-self: end;
+}
+footer .container .socialmedia-bar i {
+  color: white;
+  padding-right: 20px;
 }

@@ -1051,30 +1051,91 @@ header {
     }
 }
 
-footer {
+.about-crito {
+    position: relative;
+    z-index: 0;
     background-color: #191919;
 
-    .grid-container {
+    .bglinesfooter {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
 
+    }
+
+    .container {
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+        .grid-container {
+
+            display: grid;
+            grid-template-columns: 10fr 5fr 6fr 7fr 7fr;
+            gap: 50px;
+
+            .logotype {
+                padding-bottom: 15px;
+            }
+
+
+            h3 {
+                padding-bottom: 25px;
+                color: white;
+                font-weight: 700;
+                font-size: 22px;
+
+            }
+
+            p {
+                color: #DAD9D3
+            }
+
+
+
+        }
+    }
+
+
+}
+
+footer {
+    background-color: #191919;
+    border-top: 1px solid #dad9d333;
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+
+    .container {
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-        gap: 100px;
+        grid-template-columns: 1fr 1fr;
 
-        h3 {
-            padding: 25px;
+
+        p {
+            color: #DAD9D3
         }
 
-        a {}
+
+
+        .socialmedia-bar {
+
+
+            justify-self: end;
+
+
+
+            i {
+                color: white;
+                padding-right: 20px;
+            }
+        }
+
 
     }
 
-    h3 {
-        color: white;
-        font-weight: 700;
-        font-size: 22px;
-    }
 
-    p {
-        color: #DAD9D3
-    }
+
+
+
+
 }
