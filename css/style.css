@@ -294,12 +294,16 @@ header .container .menu .btn-login {
 }
 
 .clients .grid-container {
-  gap: 45px;
+  gap: 100px;
   display: flex;
   justify-content: center;
   padding-top: 95px;
   padding-bottom: 95px;
   flex-wrap: wrap;
+}
+.clients .grid-container img {
+  width: 120%;
+  height: auto;
 }
 
 .features {
@@ -311,21 +315,13 @@ header .container .menu .btn-login {
   width: 85%;
   margin: auto;
 }
-.features .section-title {
-  display: block;
-}
-@media (min-width: 1200px) {
-  .features .section-title {
-    text-align: left;
-  }
-}
-.features .section-title .container p {
+.features .section-title p {
   margin-top: -100px;
   margin-bottom: 30px;
 }
-.features .section-title .container h2 {
+.features .section-title h2 {
   text-align: left;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .features .section-title .btn-yellow {
   padding-left: 200px;
@@ -334,30 +330,25 @@ header .container .menu .btn-login {
 .features .advice .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
-}
-@media (min-width: 768px) {
-  .features .advice .container {
-    grid-template-columns: 1fr 1fr;
-  }
+  gap: 100px;
 }
 .features .advice .container .advices {
-  display: flex;
-  flex-direction: column;
   color: #191919;
   text-decoration: none;
 }
 .features .advice .container .advices i {
-  font-weight: 700;
-  font-size: 22px;
+  font-size: 30px;
   margin-top: 40px;
 }
-.features .advice h3 {
-  font-family: "DM Sans", sans-serif;
+.features .advice .container h3 {
   font-weight: 700;
   font-size: 22px;
   padding-top: 35px;
   padding-bottom: 16px;
+}
+.features .advice .container p {
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .company .container {
@@ -380,11 +371,6 @@ header .container .menu .btn-login {
 .company .container .parent .child1 img {
   width: 50%;
   height: auto;
-}
-@media (min-width: 1200px) {
-  .company .container .parent .child1 img {
-    display: block;
-  }
 }
 .company .container .parent .child1 #red {
   color: #F94D1C;
@@ -421,24 +407,22 @@ header .container .menu .btn-login {
   font-size: 45px;
   padding-bottom: 20px;
 }
-.company .container .grid-container {
-  display: grid;
-  grid-template-columns: repeat 2, 1fr;
-  gap: 10px;
+.company .container .about p {
+  line-height: 2.5;
 }
-.company .container .grid-container .center-content {
-  justify-self: end;
-  align-self: start;
+.company .container .about .buttons {
+  margin-top: 80px;
+  display: flex;
+  gap: 40px;
 }
-.company .container .grid-container .center-content .introvideo {
-  text-decoration: none;
+.company .container .about .buttons .introvideo {
   color: #191919;
-  padding: 25px;
-  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
 }
-.company .container .grid-container .center-content .introvideo i {
-  font-size: 3em;
-  padding-top: 20px;
+.company .container .about .buttons .introvideo i {
+  font-size: 55px;
+  margin-right: -15px;
 }
 
 .services {
