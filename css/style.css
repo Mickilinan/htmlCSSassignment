@@ -476,21 +476,28 @@ header .container .menu .btn-login {
   right: 0;
 }
 
-.why-choose-us .container {
+.why-choose-us {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
+  align-content: center;
+}
+.why-choose-us .container {
+  padding-left: 550px;
+  margin-top: -70px;
+}
+.why-choose-us .container .section-title {
+  padding-bottom: 30px;
 }
 .why-choose-us .container .choose-us {
   display: flex;
   text-decoration: none;
   color: #191919;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  line-height: 2.5;
 }
 .why-choose-us .container .choose-us h3 {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 22px;
 }
 .why-choose-us .container .choose-us p {
   font-weight: 400;
@@ -499,24 +506,20 @@ header .container .menu .btn-login {
 .why-choose-us .container .ichoose {
   font-size: 20px;
 }
-.why-choose-us .container .parent {
-  position: relative;
-  left: 500px;
-  bottom: 700px;
+.why-choose-us .images {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 70px;
 }
-.why-choose-us .container .parent .background {
+.why-choose-us .images .background {
   position: relative;
-  top: 250px;
-  left: 120px;
+  margin-top: 180px;
+  z-index: 0;
 }
-.why-choose-us .container .parent .twowomen {
+.why-choose-us .images .twowomen {
   position: absolute;
-  top: 70px;
-  left: 220px;
-}
-.why-choose-us .container .parent img {
-  max-width: 100%;
-  height: auto;
+  right: 300px;
+  z-index: 1;
 }
 
 .project-and-case .container .section-title {
