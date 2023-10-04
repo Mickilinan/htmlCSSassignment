@@ -367,16 +367,28 @@ header {
         padding-bottom: 95px;
         flex-wrap: wrap;
 
+        a {
+            display: block;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            :hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            }
+        }
+
         img {
             width: 120%;
             height: auto;
+
+
+
         }
+
+
+
+
     }
-
-
-
-
-
 
 }
 
@@ -849,6 +861,7 @@ header {
     .container {
 
 
+
         .grid-container {
             display: grid;
             grid-template-columns: 2fr 1fr;
@@ -886,9 +899,6 @@ header {
             gap: 20px;
 
 
-
-
-
             h3 {
                 font-weight: 700;
                 font-size: 22px;
@@ -906,7 +916,18 @@ header {
             }
 
 
+
+
         }
+
+
+    }
+
+    .dots {
+
+        margin-left: 1150px;
+        margin-top: 60px;
+
     }
 }
 
@@ -975,6 +996,7 @@ header {
 }
 
 .article-news {
+
     .container {
 
 
@@ -1012,7 +1034,7 @@ header {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 30px;
-            margin-bottom: 100px;
+            margin-bottom: 50px;
 
 
             .news {
@@ -1020,11 +1042,11 @@ header {
                 text-decoration: none;
 
                 &:hover {
-                    color: #DAD9D3;
+                    // color: #DAD9D3;
 
                     img {
-                        width: 100%;
-                        height: auto;
+                        transform: scale(1.2);
+                        transition: transform 0.3s ease;
                     }
 
                 }
@@ -1042,6 +1064,13 @@ header {
 
 
     }
+
+    .dots {
+
+        margin-left: 1150px;
+        margin-bottom: 90px;
+    }
+
 }
 
 .newsletter {
@@ -1099,10 +1128,12 @@ footer {
 
 
 
+
     .about-crito {
         position: relative;
         z-index: 0;
         background-color: #191919;
+
 
         .bglinesfooter {
             position: absolute;
@@ -1120,13 +1151,30 @@ footer {
             .grid-container {
 
                 display: grid;
-                grid-template-columns: 8fr 5fr 6fr 7fr 5fr;
+                grid-template-columns: 9fr 5fr 6fr 7fr 5fr;
                 gap: 50px;
+
+                .links {
+                    line-height: 2.3;
+                    list-style: none;
+                    margin-left: -30px;
+
+
+                    text-decoration: none;
+                    color: #DAD9D3;
+
+                    &:hover {
+                        color: #F9D783;
+                    }
+
+
+                }
 
 
 
                 .logotype {
-                    padding-bottom: 25px;
+                    padding-bottom: 35px;
+                    margin-top: -20px;
                 }
 
 
@@ -1141,9 +1189,6 @@ footer {
 
                 p {
                     color: #DAD9D3;
-
-
-
 
 
                 }

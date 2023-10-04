@@ -301,6 +301,14 @@ header .container .menu .btn-login {
   padding-bottom: 95px;
   flex-wrap: wrap;
 }
+.clients .grid-container a {
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.clients .grid-container a :hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 .clients .grid-container img {
   width: 120%;
   height: auto;
@@ -627,6 +635,10 @@ header .container .menu .btn-login {
   width: 100%;
   height: auto;
 }
+.meet-our-team .dots {
+  margin-left: 1150px;
+  margin-top: 60px;
+}
 
 .testimonial {
   background-color: #F9D783;
@@ -691,18 +703,15 @@ header .container .menu .btn-login {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .article-news .container .get-news .news {
   color: #191919;
   text-decoration: none;
 }
-.article-news .container .get-news .news:hover {
-  color: #DAD9D3;
-}
 .article-news .container .get-news .news:hover img {
-  width: 100%;
-  height: auto;
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
 }
 .article-news .container .get-news .news h2 {
   font-weight: 700;
@@ -710,6 +719,10 @@ header .container .menu .btn-login {
 }
 .article-news .container .get-news .news p {
   padding-top: 20px;
+}
+.article-news .dots {
+  margin-left: 1150px;
+  margin-bottom: 90px;
 }
 
 .newsletter {
@@ -768,11 +781,22 @@ footer .about-crito .container {
 }
 footer .about-crito .container .grid-container {
   display: grid;
-  grid-template-columns: 8fr 5fr 6fr 7fr 5fr;
+  grid-template-columns: 9fr 5fr 6fr 7fr 5fr;
   gap: 50px;
 }
+footer .about-crito .container .grid-container .links {
+  line-height: 2.3;
+  list-style: none;
+  margin-left: -30px;
+  text-decoration: none;
+  color: #DAD9D3;
+}
+footer .about-crito .container .grid-container .links:hover {
+  color: #F9D783;
+}
 footer .about-crito .container .grid-container .logotype {
-  padding-bottom: 25px;
+  padding-bottom: 35px;
+  margin-top: -20px;
 }
 footer .about-crito .container .grid-container h3 {
   padding-bottom: 35px;
