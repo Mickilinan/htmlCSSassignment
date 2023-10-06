@@ -10,6 +10,7 @@ body {
     line-height: 1.5;
 }
 
+
 .wrapper-grid {
     height: 100vh;
     display: grid;
@@ -28,6 +29,7 @@ body {
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
+    
 
     i {
         margin-left: 8px;
@@ -40,7 +42,10 @@ body {
         color: #F0EFE9;
     }
 
+
 }
+
+
 
 .btn-black {
     background-color: #191919;
@@ -283,13 +288,20 @@ header {
         justify-content: space-between;
         align-items: center;
 
+        @media (max-width: 768px) {
+            text-align: left;
+            
+            
+        }
+
+
 
         .content {
             padding-top: 40px;
             padding-bottom: 40px;
-            text-align: center;
+            text-align: left;
 
-            @media (min-width: 1200px) {
+            @media (max-width: 768px) {
                 text-align: left;
             }
 
@@ -298,8 +310,10 @@ header {
                 font-weight: 700;
                 font-size: 40px;
 
-                @media (min-width: 768px) {
-                    font-size: 70px;
+                @media (max-width: 768px) {
+                    
+                    font-size: 20px;
+                    text-align: left;
                 }
 
                 @media (min-width: 1400px) {
@@ -318,8 +332,8 @@ header {
                 padding-right: 10px;
 
 
-                @media (min-width: 768px) {
-                    font-size: 20px;
+                @media (max-width: 768px) {
+                    font-size: 15px;
                     padding-left: 0px;
                     padding-right: 0px;
                 }
@@ -328,13 +342,16 @@ header {
             }
 
             a {
-                margin-right: 0px;
-                display: block;
-                margin-bottom: 20px;
+                margin-right:10px;
+                // display: block;
+                // margin-bottom: 20px;
 
-                @media (min-width: 768px) {
-                    margin-right: 10px;
+                @media (max-width: 768px) {
+                    margin: 0;
                     display: inline-block;
+                    padding: 12px 24px;
+                    
+                    
                 }
 
 
@@ -389,6 +406,25 @@ header {
 
 
     }
+    @media (max-width: 768px) {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+        
+
+        .grid-container {
+        
+        img {
+            width: 70%;
+            height: auto;
+            
+        }
+
+    }
+    
+        
+    }
 
 }
 
@@ -402,6 +438,18 @@ header {
     width: 85%;
     margin: auto;
 
+    @media (max-width: 768px) {
+                
+        border:none;
+        text-align: left;
+        margin:0;
+        padding:0;
+        
+        
+        
+         
+     }
+  
 
 
 
@@ -410,11 +458,23 @@ header {
         p {
             margin-top: -100px;
             margin-bottom: 30px;
+
+            @media (max-width: 768px) {
+
+            
+                 
+             }
         }
 
         h2 {
             text-align: left;
             margin-bottom: 50px;
+
+            @media (max-width: 768px) {
+                 
+                font-size: 30px;
+                 
+            }
 
 
         }
@@ -426,17 +486,57 @@ header {
             padding-left: 200px;
             padding-right: 200px;
 
+            @media (max-width: 768px) {
+                margin: 0;
+                display: inline-block;
+                padding-left: 50px;
+                padding-right: 50px;
+                
+                
+                 
+            }
+
 
 
         }
+        @media (max-width: 768px) {
+                
+            display: flex;
+            flex-direction: column;
+            margin:0;
+            justify-content: left;
+            margin-left: -250px;
+             
+            
+             
+         }
+
+     
     }
 
     .advice {
+
+        @media (max-width: 768px) {
+
+            
+                 
+        }
 
         .container {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 100px;
+
+            @media (max-width: 768px) {
+                
+               
+
+
+            
+                 
+            }
+
+            
 
 
 

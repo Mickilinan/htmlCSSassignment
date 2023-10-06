@@ -233,12 +233,17 @@ header .container .menu .btn-login {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .showcase .container {
+    text-align: left;
+  }
+}
 .showcase .container .content {
   padding-top: 40px;
   padding-bottom: 40px;
-  text-align: center;
+  text-align: left;
 }
-@media (min-width: 1200px) {
+@media (max-width: 768px) {
   .showcase .container .content {
     text-align: left;
   }
@@ -248,9 +253,10 @@ header .container .menu .btn-login {
   font-weight: 700;
   font-size: 40px;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .showcase .container .content h1 {
-    font-size: 70px;
+    font-size: 20px;
+    text-align: left;
   }
 }
 @media (min-width: 1400px) {
@@ -265,22 +271,21 @@ header .container .menu .btn-login {
   padding-left: 10px;
   padding-right: 10px;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .showcase .container .content p {
-    font-size: 20px;
+    font-size: 15px;
     padding-left: 0px;
     padding-right: 0px;
   }
 }
 .showcase .container .content a {
-  margin-right: 0px;
-  display: block;
-  margin-bottom: 20px;
+  margin-right: 10px;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .showcase .container .content a {
-    margin-right: 10px;
+    margin: 0;
     display: inline-block;
+    padding: 12px 24px;
   }
 }
 .showcase .container img {
@@ -313,6 +318,16 @@ header .container .menu .btn-login {
   width: 120%;
   height: auto;
 }
+@media (max-width: 768px) {
+  .clients {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .clients .grid-container img {
+    width: 70%;
+    height: auto;
+  }
+}
 
 .features {
   padding: 60px 250px 100px 100px;
@@ -323,6 +338,14 @@ header .container .menu .btn-login {
   width: 85%;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .features {
+    border: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+}
 .features .section-title p {
   margin-top: -100px;
   margin-bottom: 30px;
@@ -331,9 +354,31 @@ header .container .menu .btn-login {
   text-align: left;
   margin-bottom: 50px;
 }
+@media (max-width: 768px) {
+  .features .section-title h2 {
+    font-size: 30px;
+  }
+}
 .features .section-title .btn-yellow {
   padding-left: 200px;
   padding-right: 200px;
+}
+@media (max-width: 768px) {
+  .features .section-title .btn-yellow {
+    margin: 0;
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .features .section-title {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: left;
+    margin-left: -250px;
+  }
 }
 .features .advice .container {
   display: grid;
