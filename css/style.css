@@ -791,13 +791,16 @@ header .container .menu .btn-login {
   font-weight: bold;
 }
 
+.contactinfo {
+  padding-bottom: 70px;
+  padding-top: 90px;
+}
 .contactinfo .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   max-width: 1320px;
   margin: 0 auto;
   gap: 25px;
-  padding: 20px;
 }
 .contactinfo .grid-container .grid-item {
   border: 1px solid #F0EFE9;
@@ -837,6 +840,62 @@ header .container .menu .btn-login {
   font-weight: 400;
   font-size: 16px;
 }
+
+.leave-a-message .container {
+  background-color: #F0EFE9;
+  max-width: 1320px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.leave-a-message .container h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-top: 100px;
+}
+.leave-a-message .container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.leave-a-message .container form input {
+  color: #191919;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 25px;
+  outline: none;
+  border: 1px solid rgba(25, 25, 25, 0.1);
+  margin-bottom: 20px;
+  width: 80%;
+}
+.leave-a-message .container form textarea {
+  color: #191919;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 25px;
+  outline: none;
+  border: 1px solid rgba(25, 25, 25, 0.1);
+  margin-bottom: 20px;
+  width: 80%;
+  resize: none;
+}
+.leave-a-message .container form .btn-yellow {
+  margin-top: 20px;
+  width: 80%;
+}
+
+.map {
+  padding-top: 100px;
+}
+.map img {
+  width: 100%;
+  height: auto;
+}
+
 footer {
   background-color: #191919;
   padding-top: 35px;
