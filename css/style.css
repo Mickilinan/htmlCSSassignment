@@ -17,6 +17,7 @@ body {
 }
 @media (max-width: 768px) {
   .wrapper-grid {
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -1275,6 +1276,11 @@ header .container .menu .btn-login {
 .map img {
   width: 100%;
   height: auto;
+}
+@media (max-width: 768px) {
+  .map img {
+    margin-top: -100px;
+  }
 }
 
 footer {
